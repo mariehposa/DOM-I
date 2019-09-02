@@ -51,8 +51,32 @@ topNav[4].textContent = siteContent.nav["nav-item-5"]
 topNav[5].textContent = siteContent.nav["nav-item-6"]
 
 //Update the ctaHeader
-let ctaElement = document.getElementsByClassName("cta-text")[0].children;
-ctaElement[0].textContent = siteContent.cta["h1"]
-ctaElement[1].textContent = siteContent.cta["button"]
+let ctaText = document.getElementsByClassName("cta-text")[0].children;
+ctaText[0].textContent = siteContent.cta["h1"]
+ctaText[1].textContent = siteContent.cta["button"]
 let ctaLogo = document.getElementById("cta-img");
 ctaLogo.setAttribute('src', siteContent.cta["img-src"])
+
+let textContentClass = document.getElementsByClassName("text-content");
+let features = textContentClass[0].children;
+features[0].textContent = siteContent["main-content"]["features-h4"]
+features[1].textContent = siteContent["main-content"]["features-content"]
+
+
+
+let about = textContentClass[1].children;
+about[0].textContent = siteContent["main-content"]["about-h4"]
+about[1].textContent = siteContent["main-content"]["about-content"]
+
+let services = textContentClass[2].children;
+services[0].textContent = siteContent["main-content"]["services-h4"]
+services[1].textContent = siteContent["main-content"]["services-content"]
+
+let product = textContentClass[3].children;
+product[0].textContent = siteContent["main-content"]["product-h4"]
+product[1].textContent = siteContent["main-content"]["product-content"]
+
+let vision = textContentClass[4].children;
+vision[0].textContent = siteContent["main-content"]["vision-h4"]
+vision[1].textContent = siteContent["main-content"]["vision-content"]
+
