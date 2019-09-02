@@ -62,7 +62,8 @@ let features = textContentClass[0].children;
 features[0].textContent = siteContent["main-content"]["features-h4"]
 features[1].textContent = siteContent["main-content"]["features-content"]
 
-
+let middleImage = document.getElementById("middle-img");
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 let about = textContentClass[1].children;
 about[0].textContent = siteContent["main-content"]["about-h4"]
