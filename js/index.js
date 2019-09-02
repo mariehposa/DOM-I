@@ -50,7 +50,7 @@ topNav[3].textContent = siteContent.nav["nav-item-4"]
 topNav[4].textContent = siteContent.nav["nav-item-5"]
 topNav[5].textContent = siteContent.nav["nav-item-6"]
 
-//Update the ct
+//Update the ctaHeader
 let ctaElement = document.getElementsByClassName("cta-text")[0].children;
 ctaElement[0].textContent = siteContent.cta["h1"]
 ctaElement[1].textContent = siteContent.cta["button"]
