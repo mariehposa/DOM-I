@@ -81,3 +81,9 @@ let vision = textContentClass[4].children;
 vision[0].textContent = siteContent["main-content"]["vision-h4"]
 vision[1].textContent = siteContent["main-content"]["vision-content"]
 
+let contactClass = document.getElementsByClassName("contact")[0].children;
+contactClass[0].textContent = siteContent["contact"]["contact-h4"]
+contactClass[1].textContent = siteContent.contact.address;
+contactClass[2].textContent = siteContent["contact"]["phone"]
+contactClass[3].textContent = siteContent["contact"]["email"]
+
