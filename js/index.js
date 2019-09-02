@@ -87,3 +87,5 @@ contactClass[1].textContent = siteContent.contact.address;
 contactClass[2].textContent = siteContent["contact"]["phone"]
 contactClass[3].textContent = siteContent["contact"]["email"]
 
+let footerTag = document.getElementsByTagName("footer")[0].children;
+footerTag[0].textContent = siteContent["footer"]["copyright"]
