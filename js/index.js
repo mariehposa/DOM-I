@@ -40,3 +40,53 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Update the navigation
+let topNav = document.querySelectorAll("a");
+topNav[0].textContent = siteContent.nav["nav-item-1"]
+topNav[1].textContent = siteContent.nav["nav-item-2"]
+topNav[2].textContent = siteContent.nav["nav-item-3"]
+topNav[3].textContent = siteContent.nav["nav-item-4"]
+topNav[4].textContent = siteContent.nav["nav-item-5"]
+topNav[5].textContent = siteContent.nav["nav-item-6"]
+
+//Update the ctaHeader
+let ctaText = document.getElementsByClassName("cta-text")[0].children;
+ctaText[0].textContent = siteContent.cta["h1"]
+ctaText[1].textContent = siteContent.cta["button"]
+let ctaLogo = document.getElementById("cta-img");
+ctaLogo.setAttribute('src', siteContent.cta["img-src"])
+
+let textContentClass = document.getElementsByClassName("text-content");
+let features = textContentClass[0].children;
+features[0].textContent = siteContent["main-content"]["features-h4"]
+features[1].textContent = siteContent["main-content"]["features-content"]
+
+let middleImage = document.getElementById("middle-img");
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+let about = textContentClass[1].children;
+about[0].textContent = siteContent["main-content"]["about-h4"]
+about[1].textContent = siteContent["main-content"]["about-content"]
+
+let services = textContentClass[2].children;
+services[0].textContent = siteContent["main-content"]["services-h4"]
+services[1].textContent = siteContent["main-content"]["services-content"]
+
+let product = textContentClass[3].children;
+product[0].textContent = siteContent["main-content"]["product-h4"]
+product[1].textContent = siteContent["main-content"]["product-content"]
+
+let vision = textContentClass[4].children;
+vision[0].textContent = siteContent["main-content"]["vision-h4"]
+vision[1].textContent = siteContent["main-content"]["vision-content"]
+
+let contactClass = document.getElementsByClassName("contact")[0].children;
+contactClass[0].textContent = siteContent["contact"]["contact-h4"]
+contactClass[1].textContent = siteContent.contact.address;
+contactClass[2].textContent = siteContent["contact"]["phone"]
+contactClass[3].textContent = siteContent["contact"]["email"]
+
+let footerTag = document.getElementsByTagName("footer")[0].children;
+footerTag[0].textContent = siteContent["footer"]["copyright"]
+
